@@ -19,22 +19,34 @@
     
         <!-- icons -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+        <link ref="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+        <link rel="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.0/css/all.min.css">
     </head>
 
       
     
         <body>
         <!-- The left side of the page  -->
-
-            <div class="headerLeft">  
+            <div class="sectionAside">  
               <p> . . .  </p>
+              <ul class="sectionAside-menu">  
+                <li class="sectionAside-menu__home">
+                  <i class="fa-sharp fa-solid fa-house"></i> 
+                  Acceuil 
+                </li>
 
-              <ul class="headerLeft-menu">  
-                <li><i class="fa-sharp fa-solid fa-house"></i> Acceuil </li>
-                <li><i class="fa-solid fa-magnifying-glass"></i> Rechercher </li>
-                <li><i class="fa-solid fa-bars"></i> Bibliothèque </li>
+                <li class="sectionAside-menu__search">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                   Rechercher 
+                  </li>
 
-                <li><i class="fa-brands fa-spotify"></i> 
+                <li class="sectionAside-menu__library">
+                  <i class="fa-solid fa-chart-simple"></i>
+                   Bibliothèque 
+                  </li>
+
+                <li class="sectionAside-menu__premium">
+                  <i class="fa-brands fa-spotify"></i> 
                         Premium 
                     <span>
                     <i class="fa-solid fa-arrow-up-right-from-square"></i>
@@ -42,41 +54,86 @@
                 </li>
                 </ul>
 
-                <ul class="headerLeft-menu__playlist">
-                  <li><i class="fa-regular fa-square-plus"> </i> Créer une playlist</li>
-                  <li><i class="fa-solid fa-heart"></i> Titre likés </li>
-              </ul>
-              
-               <p class="headerLeft-menu__playlistName"> Make them remenb...</p>   
-              
+                <ul class="sectionAside-menu__playlist">
+                  <li class="sectionAside-menu__playlistCreate">
+                    <i class="fa-regular fa-square-plus"> </i>
+                     Créer une playlist
+                  </li>
+
+                  <li class="sectionAside-menu__playlistTitle">
+                    <i class="fa-solid fa-heart"></i> 
+                    Titre likés 
+                  </li>
+              </ul>       
+               <p class="sectionAside-menu__playlistName"> 
+                 Make them remenb...
+              </p>                
             </div>
 
-              <!-- the top side / Quick presentation of the playlist -->
-            <section>
-            </section>
-
-              <!-- the playlist -->
             <main>
-              <div class="container">
-                hello world 
+              <!-- the top / header in responsive -->
+              <div class="header">  
+                <!-- Left -->
                 <i class="fa-solid fa-chevron-left"></i>
                 <i class="fa-sharp fa-solid fa-chevron-right"></i>
+
+                <!-- Right-->
+                  <ul>
+                    <li class="header-subscribtion"> 
+                      S'abonner
+                    </li>
+                    <li class="header-user"> 
+                    <i class="fa-solid fa-user"></i>      
+                      hujekjek1udk      
+                    </li>
+                </ul>
               </div>
+
+              <div>
+                <!-- the top / top bottom -->
+                  <!-- Picture / Left-->
+                   <!-- Details / Right -->
+              </div>
+            
+              <div>
+              <!-- the playlist -->
               <!-- left -->
                 <i class="fa-solid fa-circle-play"></i>
                 <i class="fa-sharp fa-solid fa-circle-down"></i>
                 <i class="fa-solid fa-user-plus"></i>
               <!-- right -->
               <i class="fa-solid fa-magnifying-glass"></i>
+             </div>
           
             </main>
 
             <footer>
-              ICI CEST LE FOOTER 
-                <audio>
-                    <!-- Modifier l'audio -->
-                </audio>
+            
+              <div class="footer-audio">
+                    <!-- Icon here de l'audio  -->
+                    <i class="fa-solid fa-shuffle"></i> 
+                    <i class="fa-solid fa-backward-fast"></i>
+                    <i class="fa-sharp fa-solid fa-circle-play"></i>
+                    <i class="fa-solid fa-forward-fast"></i>
+                    <i class="fa-solid fa-rotate"></i>
+                   
+                    <div class="footer-audio__player"> </div>
 
+                    <div class="footer-audio__playerLenght">
+                      <p class="footer-audio__playerLenghtStart">0:00</p>
+                      <p class="footer-audio__playerLenghtEnd">3:33</p>
+                    </div>
+                    
+              </div>
+
+                <div class="footer-audio__volume">
+                    <!-- Icon here du volume de l'audio  -->
+                    <i class="fa-solid fa-microphone"></i> 
+                    <i class="fa-solid fa-chart-simple"></i>
+                    <i class="fa-solid fa-desktop"></i>
+                    <i class="fa-solid fa-volume-off"></i>
+              </div>
+              <div class="footer-audio__volumeLenght"> </div>
             </footer>
 
         </body>
