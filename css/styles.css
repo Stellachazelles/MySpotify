@@ -1,9 +1,12 @@
-@media (min-width: 400px) { 
+@media (min-width: 600px) { 
 
     body {
-     
+        display: flex;
+      
         font-family: 'Montserrat', sans-serif;
         color: #b3b3b3;
+        width:100%; 
+        height:100%
     
     }
     
@@ -14,11 +17,10 @@
     }
     
     .sectionAside {
-       flex-wrap: wrap;
-       position: fixed;
+       flex-direction: wrap;
        left: 0;
-       width: 12%;
-       height: 750px;
+       /*width: 12%; */
+       height: 790px;
        padding-left: 20px;
        padding-right: 10px;
        background-color: 	#121212;
@@ -59,12 +61,13 @@
     
     /* Main section */ 
     
-    main {
+    .main {
       
-     margin-left: 14%; 
-     
+     flex-direction: wrap;
+     width: 100%;
+
     }
-    .header {
+    .main-header {
         
      
         
@@ -73,7 +76,7 @@
     
     
 
-    .playlist {
+    .main-playlist {
         display: grid; 
         grid-template-columns: 200px 400px;
         border-top: solid #121212;
@@ -83,7 +86,7 @@
         
 
     }
-    .playlist-songs {
+    .main-playlist__songs {
        
 
     
