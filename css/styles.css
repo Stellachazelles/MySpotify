@@ -1,13 +1,11 @@
 @media (min-width: 600px) { 
 
     body {
-        display: flex;
-      
+        display: flex;     
         font-family: 'Montserrat', sans-serif;
         color: #b3b3b3;
         width:100%; 
-        height:100%
-    
+        height:100%    
     }
     
     /* Left side */ 
@@ -16,12 +14,12 @@
     
     }
     
-    .sectionAside {
-       flex-direction: wrap;
+    header {
+        flex-direction: wrap;
        left: 0;
        /*width: 12%; */
        height: 790px;
-       padding-left: 20px;
+            padding-left: 20px;
        padding-right: 10px;
        background-color: 	#121212;
        font-weight: bolder;
@@ -61,22 +59,31 @@
     
     /* Main section */ 
     
-    .main {
-      
-     flex-direction: wrap;
-     width: 100%;
+       section {
+       display: flex;
+       flex-direction: column;
+       }
 
-    }
-    .main-header {
-        
-     
-        
-    
-    }
-    
-    
 
-    .main-playlist {
+       nav {
+        flex-direction: column;
+        width: 100%;
+   
+       }
+       article {
+        flex-direction: column;
+       }
+
+       .main-header {
+           
+        
+           
+       
+       }
+       
+       
+   
+       .main-playlist {
         display: grid; 
         grid-template-columns: 200px 400px;
         border-top: solid #121212;
@@ -92,7 +99,6 @@
     
         
     }
-    
     /* Bottom/Footer*/ 
     footer {
       display: flex;
@@ -170,5 +176,4 @@
     .sectionAside-menu, .sectionAside-menu__playlist {
         cursor: pointer;
     }
-
      }
