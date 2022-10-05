@@ -105,21 +105,59 @@
 
     .main-subscription {
         margin-left: 65%;
+        padding-left: 1%;
+        padding-right:1%;
+        margin-right: 2%;
         background: white;
         color: #212121;
-        border-radius: 30%;   
+        border-radius: 36px;
         height: 12px;
-        font-weight: 500;
         width: 12;
-        margin-top: 0.3%;  
-    
+        margin-top: 0.8%;
+        font-weight: bold;
+        font-size: small;
+ 
+    }
+
+    .main-subscription:hover {
+        -webkit-transform: scale(0.5); /* Safari 3-8 */
+        transform: scale(1.1); 
     }
 
     }
 
     .fa-user {
-        justify-content: end;
+        margin-top: 0.8%;
+        background: #535353;
+        color: white;
+        border-radius: 50%;
+        width: 14px;
+        height: 10px; 
     }
+
+    .fa-user:hover .dropbtn {
+        background: #535353;
+    }
+
+    select {
+
+        display: inline-block;
+        overflow: hidden;
+        background: #212121;
+        border-radius: 36px;
+
+        color: white;
+        height: 40px;
+        margin-top: 0.6%;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+    }
+
+    option {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+    }
+
 
 
     .main-playlist__songs {
@@ -202,7 +240,7 @@
        
     }
     
-    .sectionAside-menu, .sectionAside-menu__playlist {
+    .sectionAside-menu, .sectionAside-menu__playlist, select, option  {
         cursor: pointer;
     }
      }
