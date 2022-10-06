@@ -17,8 +17,8 @@
     header {
        flex-direction: wrap;
        left: 0;
-       /*width: 12%; 
-        position: fixe; */ 
+       /*width: 12%; */
+        position: fixe;  
        height: 790px;
        padding-left: 20px;
        padding-right: 10px;
@@ -64,6 +64,7 @@
        flex-direction: column;
        width: 100%;
        height: 100%;
+     
 
        }
 
