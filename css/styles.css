@@ -305,23 +305,30 @@
           /* The list of ht songs */ 
 
           .songList {
-            display: flex;
-            flex-direction: column;
-            margin-left: 2%;
-            font-size: small;
+            display: grid; 
+            grid-template-columns:  1fr  1fr  1fr 1fr  1fr 1fr 1fr; 
+            
+            
           }
           
-
-
-          .test1 {
+        .saokopapi2{
             display: flex;
-            background-color: pink;
-          }
-          
-          .test2 {
-              flex-wrap: wrap;
-          }
+         
+        }
 
+        .test3 { 
+            flex-wrap: wrap; 
+            padding: 5px;
+        }
+
+        .motomami {
+            flex-wrap: wrap; 
+            padding: 5px;
+        }
+
+          
+           
+        
 
 
     /* Footer*/ 
