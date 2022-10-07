@@ -307,10 +307,12 @@
           .songList {
             display: grid; 
             grid-template-columns:  1fr  1fr  1fr 1fr  1fr 1fr 1fr; 
+            overflow: auto;
             
             
           }
-          
+
+         
         .saokopapi2{
             display: flex;
          
@@ -342,6 +344,7 @@
       background-color: #212121;
       border-top: thin solid #535353;
       text-align: center;
+      
     }
     
     .footer-audio {
