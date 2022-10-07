@@ -9,9 +9,10 @@
   
         <!-- font -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;900&display=swap" rel="stylesheet">
-         <!-- css -->
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;&display=swap" rel="stylesheet">
+
+        <!-- css -->
         <link rel="stylesheet" href="../css/reset.css"/>
         <link rel="stylesheet" href="../css/styles.css"/>
 
@@ -71,7 +72,7 @@
             </header>
 
 
-            <section>
+            <section>  <!-- side of the presentation of the playlist / top-->
             <nav>
               <!-- the top / header in responsive -->
               <div class="main">  
@@ -91,7 +92,7 @@
 
                   <!-- Right
                   <i class="fa-solid fa-user"> </i> -->
-                  <select> 
+                  <select class="main-user"> 
                       <optgroup> 
                         <option> <i style= "font-size:50px" class="Fas Fa-User-Alt">&#xf406;</i> user </option>
                         <option> Compte </option> 
@@ -108,10 +109,11 @@
                       <option>Déconnection</option>                    
                   </optgroup>
                 </select>
+
               </div>                   
             </nav>        
                            
-              <article>
+              <article> <!-- side of the presentation of the playlist / top-->
               <div class="main-playlist">
             
                 <p class="main-playlist__picture">
@@ -132,23 +134,63 @@
 
               </div>
             
-              
-              background: linear-gradient(#CD7710, #BD5D12, #AC4313, #743f1a);
-            }
+          
             
-
+          
+             
               <div class="main-playlist__songs">
               <!-- the playlist -->
-              <!-- left -->
-                <i class="fa-solid fa-circle-play"></i>
-                <i class="fa-sharp fa-solid fa-circle-down"></i>
-                <i class="fa-solid fa-user-plus"></i>
+                  <!-- left -->
+                  <div class="main-playlist__songsIcon"> 
+                    <i class="fa-solid fa-circle-play fa-4x"></i>
+                  </div>
+
+                  <div class="main-playlist__songsIcon2">
+                    <i class="fa-sharp fa-solid fa-circle-down fa-2x"></i>
+                    <i class="fa-solid fa-user-plus fa-2x"></i>            
+                    <i class="main-playlist__songsOption"> ... </i>
+                  </div>
+             
+
+
               <!-- right -->
-              <i class="fa-solid fa-magnifying-glass"></i>
-             </div>
+                      <div class="main-playlist__songsIconSearch"> 
+                        <i class="fa-solid fa-magnifying-glass"></i>
+
+                        <select class="main-playlist__songsIconFilter"> 
+                    
+                              <option class="filter"> Trier par </option>
+                              <option class="filter"> Tri personnalisé </option>
+                              <option class="filter"> Tri personalisé </option>
+                              <option class="filter"> Titre </option>
+                              <option class="filter"> Artiste</option>
+                              <option class="filter"> Album </option>
+                              <option class="filter"> Date d'ajout </option>
+                              <option class="filter"> Durée </option>    
+                      </select>
+                    </div>
+                  </div>
              </article>
 
             </section>
+
+
+            <main>      <!-- PLAYLIST -->
+              <article> 
+
+              
+                     <!-- HEADER DE LA PLAYLIST / Titre / album/ ajoute ect... -->
+
+              </article>
+                   <!-- liste des music -->
+
+              <article>
+                
+              </article>
+
+            </main>
+
+
 
 
             <footer>
