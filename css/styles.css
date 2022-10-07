@@ -59,6 +59,7 @@
     
     
     /* Main section */ 
+        /* Playlist/ TOP */ 
        section {
        display: flex;
        flex-direction: column;
@@ -126,6 +127,7 @@
 
         .fa-circle-play { 
         color: #1db954;
+        padding-right: 15px;
         
 
         }
@@ -148,7 +150,7 @@
 
         .main-playlist__songsIconSearch {
             flex-wrap: wrap;
-            margin-left: 75%;
+            margin-left: 70%;
             margin-top: 1%;
         }
 
@@ -258,18 +260,68 @@
     }
 
     option {
-        font-family: 'Montserrat', sans-serif;
         font-weight: bold;
     }
 
 
+    /* Playlist */ 
+        /* Bottom side */ 
 
-    .main-playlist__songs {
-       
+        .playlist {
+            width: 95%;
+            margin-top: 1%;
+        }
 
-    
+        .playlist-header {
+            display: flex;
+            border-bottom: thin solid #535353;
+            margin-left: 2%;
+            font-size: small;
+          
         
-    }
+        }
+
+        .playlist-header__number {
+            padding-right: 2%;
+        }
+
+        .playlist-header__title {
+            padding-right: 45%;
+        }
+
+        .playlist-header__album {
+            padding-right: 20%;
+        }
+
+        .playlist-header__addDate {
+            padding-right: 15%;
+        }
+
+        .playlist-header__number, .playlist-header__title, .playlist-header__album
+        .playlist-header__addDate, .laylist-header__time {
+            flex-wrap: wrap;
+        }
+        
+          /* The list of ht songs */ 
+
+          .songList {
+            display: flex;
+            flex-direction: column;
+            margin-left: 2%;
+            font-size: small;
+          }
+          
+
+
+          .test1 {
+            display: flex;
+            background-color: pink;
+          }
+          
+          .test2 {
+              flex-wrap: wrap;
+          }
+
 
 
     /* Footer*/ 
