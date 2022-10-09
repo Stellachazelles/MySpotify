@@ -6,7 +6,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>MySpotify</title>
 
-  
         <!-- font -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,6 +34,7 @@
                   Acceuil 
                 </li>
 
+           
                 <li class="sectionAside-menu__search">
                   <i class="fa-solid fa-magnifying-glass"></i>
                    Rechercher 
@@ -66,7 +66,7 @@
                   </li>
               </ul>       
                <p class="sectionAside-menu__playlistName"> 
-                 Make them remenber your family name
+                 Make them remenber your name
               </p>                
             </header>
 
@@ -123,11 +123,11 @@
                   
                   <p class="main-playlist__detailPublic">PLAYLIST PUBLIQUE</p>
 
-                 <span class="main-playlist__detailTitle">Make them remember your family name</span> 
+                 <span class="main-playlist__detailTitle">Make them remember your name</span> 
 
                   <h1> When it is time to turn lemons into a lemonade </h1>
 
-                  <p class="main-playlist__detailAccount">user  • 1 like • 2 titres, 1 h 4 min </p>
+                  <p class="main-playlist__detailAccount">user  • 1 like • 18 titres, 1 h 10 min </p>
 
                 </div>
 
@@ -154,8 +154,16 @@
 
 
                 <!-- right -->
-                        <div class="main-playlist__songsIconSearch"> 
-                          <i class="fa-solid fa-magnifying-glass"></i>
+                <div class="search-container">
+                  <form action="/search" method="get">
+                            <input class="search" id="searchleft" type="search" name="q" placeholder="Rechercher">
+                            <label class="button searchbutton" for="searchleft">
+                              <span class="mglass">&#9906;</span>
+                            </label>
+                          
+                          </form>
+                        </div>
+                                                  
 
                           <select class="main-playlist__songsIconFilter"> 
                       
@@ -169,7 +177,7 @@
                                 <option class="filter"> Durée </option>    
                         </select>
                       </div>
-                    </div>
+                 
               
 
             
@@ -192,11 +200,11 @@
 
 
                     <!-- liste des music -->
-
-                      
+                    <div class="playlist-songs">
+                       <!-- Rosalia -->  
                   <div class="songList">        
                       <p class="test1"> 1 </p>
-                      <p class=" test2"> <img class="rosalia" src="../pictures/rosalia.png" width="40" alt="rosalia"> </p>
+                      <p class=" test2"> <img class="Rosalia" src="../pictures/rosalia.png" width="40" alt="rosalia"> </p>
                         
                       <div class="saokopapi">
                           <h2> SAOKO </h2>
@@ -214,382 +222,327 @@
                   
                   
 
-
+                    <!-- Rick Ross -->
                   <div class="songList">        
-                    <p class="test1"> 1 </p>
-                    <p class=" test2"> <img class="rosalia" src="../pictures/rosalia.png" width="40" alt="rosalia"> </p>
+                    <p class="test1"> 2 </p>
+                    <p class=" test2"> <img class="RickRoss" src="../pictures/rick ross.jpg" width="40" alt="rosalia"> </p>
                     
                     <div class="saokopapi">
-                        <h2> SAOKO </h2>
+                        <h2> Hustlin' </h2>
 
                       <div class="saokopapi2">
                           <div class="test3"> E </div>
-                          <div class="motomami"> ROSALIA </div>
+                          <div class="motomami"> Rick Ross </div>
                       </div>
                     </div>
       
-                    <h1> MOTOMAMI  </h1>
+                    <h1> Port Of Miami  </h1>
                     <h1>  7 days ago  </h1>
-                    <h1> 2:18 </h1>
+                    <h1> 4:14 </h1>
                   </div>
 
 
-
+                     <!-- Fergie -->
                   <div class="songList">        
-                        <p class="test1"> 1 </p>
-                        <p class=" test2"> <img class="rosalia" src="../pictures/rosalia.png" width="40" alt="rosalia"> </p>
+                        <p class="test1"> 3 </p>
+                        <p class=" test2"> <img class="Fergie" src="../pictures/fergie.jpg" width="40" alt="rosalia"> </p>
                         
                         <div class="saokopapi">
-                            <h2> SAOKO </h2>
+                            <h2> Glamorous </h2>
 
                           <div class="saokopapi2">
                               <div class="test3"> E </div>
-                              <div class="motomami"> ROSALIA </div>
+                              <div class="motomami"> Fergie, Ludacris </div>
                           </div>
                         </div>
           
-                        <h1> MOTOMAMI  </h1>
+                        <h1> The Dutchess  </h1>
                         <h1>  7 days ago  </h1>
-                        <h1> 2:18 </h1>
+                        <h1> 4:07 </h1>
                   </div>
 
 
-
+                     <!-- Doechii -->
                   <div class="songList">        
-                <p class="test1"> 1 </p>
-                <p class=" test2"> <img class="rosalia" src="../pictures/rosalia.png" width="40" alt="rosalia"> </p>
-                
-                <div class="saokopapi">
-                    <h2> SAOKO </h2>
+                    <p class="test1"> 4 </p>
+                    <p class=" test2"> <img class="Doechii" src="../pictures/doechi.jpg" width="40" alt="rosalia"> </p>
+                    
+                    <div class="saokopapi">
+                        <h2> Persuasive </h2>
 
                   <div class="saokopapi2">
                       <div class="test3"> E </div>
-                      <div class="motomami"> ROSALIA </div>
+                      <div class="motomami"> Doechii </div>
                   </div>
                 </div>
   
-                <h1> MOTOMAMI  </h1>
-                <h1>  7 days ago  </h1>
-                <h1> 2:18 </h1>
+                    <h1> Persuasive  </h1>
+                    <h1>  7 days ago  </h1>
+                    <h1> 3:37 </h1>
+                      </div>
+
+
+                     <!-- Megan Thee Stallion -->
+                  <div class="songList">        
+                    <p class="test1"> 5 </p>
+                    <p class=" test2"> <img class="MeganTheeStallion" src="../pictures/MeganTheSTallion.jpg" width="40" alt="rosalia"> </p>
+                    
+                    <div class="saokopapi">
+                        <h2> Realer </h2>
+
+                      <div class="saokopapi2">
+                          <div class="test3"> E </div>
+                          <div class="motomami"> Megan Thee Stallion  </div>
+                      </div>
+                    </div>
+
+                    <h1> Fever  </h1>
+                    <h1>  7 days ago  </h1>
+                    <h1> 2:30 </h1>
+                      </div>
+
+
+                     <!-- IAMDDB-->
+                  <div class="songList">        
+                        <p class="test1"> 6 </p>
+                        <p class=" test2"> <img class="IAMDDB" src="../pictures/IAMDDB.jpg" width="40" alt="rosalia"> </p>
+                        
+                        <div class="saokopapi">
+                            <h2> Shade </h2>
+
+                          <div class="saokopapi2">
+                              <div class="test3"> E </div>
+                              <div class="motomami"> IAMDDB </div>
+                          </div>
+                        </div>
+
+                        <h1> Hoodrich Vol. 3  </h1>
+                        <h1>  7 days ago  </h1>
+                        <h1> 2:55 </h1>
+                      </div>
+
+
+                     <!-- Solange Things I imagined-->
+                  <div class="songList">        
+                    <p class="test1"> 7 </p>
+                    <p class=" test2"> <img class="Solange" src="../pictures/Solange.jpg" width="40" alt="rosalia"> </p>
+                    
+                    <div class="saokopapi">
+                        <h2> Things I Imagined </h2>
+
+                      <div class="saokopapi2">
+                          <div class="test3"> E </div>
+                          <div class="motomami"> Solange </div>
+                      </div>
+                    </div>
+
+                    <h1> When I get Home  </h1>
+                    <h1>  7 days ago  </h1>
+                    <h1> 1:59 </h1>
                   </div>
 
 
+                   <!-- Solange Nothing without intention -->
+                   <div class="songList">        
+                    <p class="test1"> 8 </p>
+                    <p class=" test2"> <img class="Solange" src="../pictures/Solange.jpg" width="40" alt="rosalia"> </p>
+                    
+                    <div class="saokopapi">
+                        <h2> Nothing Without Intention </h2>
+
+                      <div class="saokopapi2">
+                          <div class="test3"> E </div>
+                          <div class="motomami"> Solange </div>
+                      </div>
+                    </div>
+
+                    <h1> When I get Home  </h1>
+                    <h1>  7 days ago  </h1>
+                    <h1> 0:24 </h1>
+                  </div>
+
+
+
+                   <!-- Solange Almeda-->
+                   <div class="songList">        
+                    <p class="test1"> 9 </p>
+                    <p class=" test2"> <img class="Solange" src="../pictures/Solange.jpg" width="40" alt="rosalia"> </p>
+                    
+                    <div class="saokopapi">
+                        <h2> Almeda </h2>
+
+                      <div class="saokopapi2">
+                          <div class="test3"> E </div>
+                          <div class="motomami"> Solange </div>
+                      </div>
+                    </div>
+
+                    <h1> When I get Home  </h1>
+                    <h1>  7 days ago  </h1>
+                    <h1> 3:56 </h1>
+                  </div>
+
+                   <!-- Beyonce Cozy-->
                   <div class="songList">        
-                <p class="test1"> 1 </p>
-                <p class=" test2"> <img class="rosalia" src="../pictures/rosalia.png" width="40" alt="rosalia"> </p>
+                    <p class="test1"> 10 </p>
+                    <p class=" test2"> <img class="Beyonce" src="../pictures/Beyonce.jpg" width="40" alt="rosalia"> </p>
+                    
+                    <div class="saokopapi">
+                        <h2> COZY </h2>
+
+                      <div class="saokopapi2">
+                          <div class="test3"> E </div>
+                          <div class="motomami"> Beyoncé </div>
+                      </div>
+                    </div>
+
+                    <h1> RENAISSANCE  </h1>
+                    <h1>  7 days ago  </h1>
+                    <h1> 3:23 </h1>
+                  </div>
+
+
+
+                   <!-- Beyon / I'm that girl -->
+                   <div class="songList">        
+                    <p class="test1"> 11 </p>
+                    <p class=" test2"> <img class="Beyonce" src="../pictures/Beyonce.jpg" width="40" alt="rosalia"> </p>
+                    
+                    <div class="saokopapi">
+                        <h2> I'M THAT GIRL </h2>
+
+                      <div class="saokopapi2">
+                          <div class="test3"> E </div>
+                          <div class="motomami"> Beyoncé </div>
+                      </div>
+                    </div>
+
+                    <h1> RENAISSANCE  </h1>
+                    <h1>  7 days ago  </h1>
+                    <h1> 3:28 </h1>
+                  </div>
+
+
+                   <!-- Beyonce / Move -->
+                   <div class="songList">        
+                    <p class="test1"> 12 </p>
+                    <p class=" test2"> <img class="Beyonce" src="../pictures/Beyonce.jpg" width="40" alt="rosalia"> </p>
+                    
+                    <div class="saokopapi">
+                        <h2> MOVE </h2>
+
+                      <div class="saokopapi2">
+                          <div class="test3"> E </div>
+                          <div class="motomami"> Beyoncé </div>
+                      </div>
+                    </div>
+
+                    <h1> RENAISSANCE  </h1>
+                    <h1>  7 days ago  </h1>
+                    <h1> 3:23 </h1>
+                  </div>
+
+                   <!-- Leikeli47 -->
+                  <div class="songList">        
+                    <p class="test1"> 13 </p>
+                    <p class=" test2"> <img class="Lekeli47" src="../pictures/Leikeli47.jpg" width="40" alt="rosalia"> </p>
+                    
+                    <div class="saokopapi">
+                        <h2> Money </h2>
+
+                      <div class="saokopapi2">
+                          <div class="test3"> E </div>
+                          <div class="motomami"> Leikeli47 </div>
+                      </div>
+                    </div>
+
+                    <h1> Wash & set  </h1>
+                    <h1>  7 days ago  </h1>
+                    <h1> 2:55 </h1>
+                  </div>
+
+
+
+                   <!-- Chole and halle -->
+                  <div class="songList">        
+                    <p class="test1"> 14 </p>
+                    <p class=" test2"> <img class="ChloeHalle" src="../pictures/ChloeHalle.jpg" width="40" alt="rosalia"> </p>
+                    
+                    <div class="saokopapi">
+                        <h2> Do it </h2>
+
+                      <div class="saokopapi2">
+                         
+                          <div class="motomami"> Chloe x Halle </div>
+                      </div>
+                    </div>
+
+                    <h1> Ungodly Hour  </h1>
+                    <h1>  7 days ago  </h1>
+                    <h1> 2:57 </h1>
+                  </div>
+
+
+
+                   <!-- Jorja SMith -->
+                  <div class="songList">        
+                    <p class="test1"> 15 </p>
+                    <p class=" test2"> <img class="JorjaSmith" src="../pictures/JorjaSmith.jpg" width="40" alt="rosalia"> </p>
+                    
+                    <div class="saokopapi">
+                        <h2> Bussdown </h2>
+
+                      <div class="saokopapi2">
+                          <div class="test3"> E </div>
+                          <div class="motomami"> Jorja Smith, Shaybo </div>
+                      </div>
+                    </div>
+
+                    <h1> Be Right Bach  </h1>
+                    <h1>  7 days ago  </h1>
+                    <h1> 3:22 </h1>
+                  </div>
+
+
+                   <!-- Eliza -->
+                  <div class="songList">        
+                    <p class="test1"> 16 </p>
+                    <p class=" test2"> <img class="Eliza" src="../pictures/Eliza.jpg" width="40" alt="rosalia"> </p>
+                    
+                    <div class="saokopapi">
+                        <h2> Alone & Unafraid </h2>
+
+                      <div class="saokopapi2">
+                          <div class="test3"> E </div>
+                          <div class="motomami"> ELIZA </div>
+                      </div>
+                    </div>
+
+                    <h1> A Real ROmantic  </h1>
+                    <h1>  7 days ago  </h1>
+                    <h1> 4:30 </h1>
+                  </div>
+
+                   <!-- Sudan Archive -->
+                  <div class="songList">        
+                    <p class="test1"> 17 </p>
+                    <p class=" test2"> <img class="SudanArchives" src="../pictures/SundanArchives.jpg" width="40" alt="rosalia"> </p>
+                    
+                    <div class="saokopapi">
+                        <h2> Nont For Sale </h2>
+
+                      <div class="saokopapi2">
+                          <div class="test3"> E </div>
+                          <div class="motomami"> Sudan Archives </div>
+                      </div>
+                    </div>
+
+                    <h1> Nont For Sale  </h1>
+                    <h1>  7 days ago  </h1>
+                    <h1> 3:40 </h1>
+                  </div>
                 
-                <div class="saokopapi">
-                    <h2> SAOKO </h2>
-
-                  <div class="saokopapi2">
-                      <div class="test3"> E </div>
-                      <div class="motomami"> ROSALIA </div>
-                  </div>
                 </div>
-
-                <h1> MOTOMAMI  </h1>
-                <h1>  7 days ago  </h1>
-                <h1> 2:18 </h1>
-                  </div>
-
-
-                  <div class="songList">        
-                    <p class="test1"> 1 </p>
-                    <p class=" test2"> <img class="rosalia" src="../pictures/rosalia.png" width="40" alt="rosalia"> </p>
-                    
-                    <div class="saokopapi">
-                        <h2> SAOKO </h2>
-
-                      <div class="saokopapi2">
-                          <div class="test3"> E </div>
-                          <div class="motomami"> ROSALIA </div>
-                      </div>
-                    </div>
-
-                    <h1> MOTOMAMI  </h1>
-                    <h1>  7 days ago  </h1>
-                    <h1> 2:18 </h1>
-                  </div>
-
-
-
-                  <div class="songList">        
-                    <p class="test1"> 1 </p>
-                    <p class=" test2"> <img class="rosalia" src="../pictures/rosalia.png" width="40" alt="rosalia"> </p>
-                    
-                    <div class="saokopapi">
-                        <h2> SAOKO </h2>
-
-                      <div class="saokopapi2">
-                          <div class="test3"> E </div>
-                          <div class="motomami"> ROSALIA </div>
-                      </div>
-                    </div>
-
-                    <h1> MOTOMAMI  </h1>
-                    <h1>  7 days ago  </h1>
-                    <h1> 2:18 </h1>
-                  </div>
-
-
-
-                  <div class="songList">        
-                    <p class="test1"> 1 </p>
-                    <p class=" test2"> <img class="rosalia" src="../pictures/rosalia.png" width="40" alt="rosalia"> </p>
-                    
-                    <div class="saokopapi">
-                        <h2> SAOKO </h2>
-
-                      <div class="saokopapi2">
-                          <div class="test3"> E </div>
-                          <div class="motomami"> ROSALIA </div>
-                      </div>
-                    </div>
-
-                    <h1> MOTOMAMI  </h1>
-                    <h1>  7 days ago  </h1>
-                    <h1> 2:18 </h1>
-                  </div>
-
-
-
-
-                  <div class="songList">        
-                    <p class="test1"> 1 </p>
-                    <p class=" test2"> <img class="rosalia" src="../pictures/rosalia.png" width="40" alt="rosalia"> </p>
-                    
-                    <div class="saokopapi">
-                        <h2> SAOKO </h2>
-
-                      <div class="saokopapi2">
-                          <div class="test3"> E </div>
-                          <div class="motomami"> ROSALIA </div>
-                      </div>
-                    </div>
-
-                    <h1> MOTOMAMI  </h1>
-                    <h1>  7 days ago  </h1>
-                    <h1> 2:18 </h1>
-                  </div>
-
-
-
-                  <div class="songList">        
-                    <p class="test1"> 1 </p>
-                    <p class=" test2"> <img class="rosalia" src="../pictures/rosalia.png" width="40" alt="rosalia"> </p>
-                    
-                    <div class="saokopapi">
-                        <h2> SAOKO </h2>
-
-                      <div class="saokopapi2">
-                          <div class="test3"> E </div>
-                          <div class="motomami"> ROSALIA </div>
-                      </div>
-                    </div>
-
-                    <h1> MOTOMAMI  </h1>
-                    <h1>  7 days ago  </h1>
-                    <h1> 2:18 </h1>
-                  </div>
-
-
-
-
-                  <div class="songList">        
-                    <p class="test1"> 1 </p>
-                    <p class=" test2"> <img class="rosalia" src="../pictures/rosalia.png" width="40" alt="rosalia"> </p>
-                    
-                    <div class="saokopapi">
-                        <h2> SAOKO </h2>
-
-                      <div class="saokopapi2">
-                          <div class="test3"> E </div>
-                          <div class="motomami"> ROSALIA </div>
-                      </div>
-                    </div>
-
-                    <h1> MOTOMAMI  </h1>
-                    <h1>  7 days ago  </h1>
-                    <h1> 2:18 </h1>
-                  </div>
-
-
-
-                  <div class="songList">        
-                    <p class="test1"> 1 </p>
-                    <p class=" test2"> <img class="rosalia" src="../pictures/rosalia.png" width="40" alt="rosalia"> </p>
-                    
-                    <div class="saokopapi">
-                        <h2> SAOKO </h2>
-
-                      <div class="saokopapi2">
-                          <div class="test3"> E </div>
-                          <div class="motomami"> ROSALIA </div>
-                      </div>
-                    </div>
-
-                    <h1> MOTOMAMI  </h1>
-                    <h1>  7 days ago  </h1>
-                    <h1> 2:18 </h1>
-                  </div>
-
-
-
-                  <div class="songList">        
-                    <p class="test1"> 1 </p>
-                    <p class=" test2"> <img class="rosalia" src="../pictures/rosalia.png" width="40" alt="rosalia"> </p>
-                    
-                    <div class="saokopapi">
-                        <h2> SAOKO </h2>
-
-                      <div class="saokopapi2">
-                          <div class="test3"> E </div>
-                          <div class="motomami"> ROSALIA </div>
-                      </div>
-                    </div>
-
-                    <h1> MOTOMAMI  </h1>
-                    <h1>  7 days ago  </h1>
-                    <h1> 2:18 </h1>
-                  </div>
-
-
-
-
-                  <div class="songList">        
-                    <p class="test1"> 1 </p>
-                    <p class=" test2"> <img class="rosalia" src="../pictures/rosalia.png" width="40" alt="rosalia"> </p>
-                    
-                    <div class="saokopapi">
-                        <h2> SAOKO </h2>
-
-                      <div class="saokopapi2">
-                          <div class="test3"> E </div>
-                          <div class="motomami"> ROSALIA </div>
-                      </div>
-                    </div>
-
-                    <h1> MOTOMAMI  </h1>
-                    <h1>  7 days ago  </h1>
-                    <h1> 2:18 </h1>
-                  </div>
-
-
-
-
-                  <div class="songList">        
-                    <p class="test1"> 1 </p>
-                    <p class=" test2"> <img class="rosalia" src="../pictures/rosalia.png" width="40" alt="rosalia"> </p>
-                    
-                    <div class="saokopapi">
-                        <h2> SAOKO </h2>
-
-                      <div class="saokopapi2">
-                          <div class="test3"> E </div>
-                          <div class="motomami"> ROSALIA </div>
-                      </div>
-                    </div>
-
-                    <h1> MOTOMAMI  </h1>
-                    <h1>  7 days ago  </h1>
-                    <h1> 2:18 </h1>
-                  </div>
-
-
-
-                  <div class="songList">        
-                    <p class="test1"> 1 </p>
-                    <p class=" test2"> <img class="rosalia" src="../pictures/rosalia.png" width="40" alt="rosalia"> </p>
-                    
-                    <div class="saokopapi">
-                        <h2> SAOKO </h2>
-
-                      <div class="saokopapi2">
-                          <div class="test3"> E </div>
-                          <div class="motomami"> ROSALIA </div>
-                      </div>
-                    </div>
-
-                    <h1> MOTOMAMI  </h1>
-                    <h1>  7 days ago  </h1>
-                    <h1> 2:18 </h1>
-                  </div>
-
-
-                  <div class="songList">        
-                    <p class="test1"> 1 </p>
-                    <p class=" test2"> <img class="rosalia" src="../pictures/rosalia.png" width="40" alt="rosalia"> </p>
-                    
-                    <div class="saokopapi">
-                        <h2> SAOKO </h2>
-
-                      <div class="saokopapi2">
-                          <div class="test3"> E </div>
-                          <div class="motomami"> ROSALIA </div>
-                      </div>
-                    </div>
-
-                    <h1> MOTOMAMI  </h1>
-                    <h1>  7 days ago  </h1>
-                    <h1> 2:18 </h1>
-                  </div>
-
-
-
-                  <div class="songList">        
-                    <p class="test1"> 1 </p>
-                    <p class=" test2"> <img class="rosalia" src="../pictures/rosalia.png" width="40" alt="rosalia"> </p>
-                    
-                    <div class="saokopapi">
-                        <h2> SAOKO </h2>
-
-                      <div class="saokopapi2">
-                          <div class="test3"> E </div>
-                          <div class="motomami"> ROSALIA </div>
-                      </div>
-                    </div>
-
-                    <h1> MOTOMAMI  </h1>
-                    <h1>  7 days ago  </h1>
-                    <h1> 2:18 </h1>
-                  </div>
-
-
-                  <div class="songList">        
-                    <p class="test1"> 1 </p>
-                    <p class=" test2"> <img class="rosalia" src="../pictures/rosalia.png" width="40" alt="rosalia"> </p>
-                    
-                    <div class="saokopapi">
-                        <h2> SAOKO </h2>
-
-                      <div class="saokopapi2">
-                          <div class="test3"> E </div>
-                          <div class="motomami"> ROSALIA </div>
-                      </div>
-                    </div>
-
-                    <h1> MOTOMAMI  </h1>
-                    <h1>  7 days ago  </h1>
-                    <h1> 2:18 </h1>
-                  </div>
-
-                  <div class="songList">        
-                    <p class="test1"> 1 </p>
-                    <p class=" test2"> <img class="rosalia" src="../pictures/rosalia.png" width="40" alt="rosalia"> </p>
-                    
-                    <div class="saokopapi">
-                        <h2> SAOKO </h2>
-
-                      <div class="saokopapi2">
-                          <div class="test3"> E </div>
-                          <div class="motomami"> ROSALIA </div>
-                      </div>
-                    </div>
-
-                    <h1> MOTOMAMI  </h1>
-                    <h1>  7 days ago  </h1>
-                    <h1> 2:18 </h1>
-                  </div>
   
               </article>
             </section>
