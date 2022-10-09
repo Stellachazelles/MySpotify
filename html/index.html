@@ -23,223 +23,188 @@
 
       
     
-        <body>
-        <!-- The left side of the page  -->
-        
-            <header >  
-              <p> . . .  </p>
-              <ul class="sectionAside-menu">  
-                <li class="sectionAside-menu__home">
+     <body>
+        <!-- The left side of the page  -->    
+        <header >    
+          <ul class="sectionAside-menu">  
+              <li>
+                  <i class="fa-solid fa-ellipsis fa-2"></i>
+              </li>
+              <li class="sectionAside-menu__home">
                   <i class="fa-sharp fa-solid fa-house"></i> 
                   Acceuil 
-                </li>
-
-           
-                <li class="sectionAside-menu__search">
+              </li>
+              <li class="sectionAside-menu__search">
                   <i class="fa-solid fa-magnifying-glass"></i>
                    Rechercher 
-                  </li>
-
-                <li class="sectionAside-menu__library">
+              </li>
+              <li class="sectionAside-menu__library">
                   <i class="fa-solid fa-chart-simple"></i>
                    Bibliothèque 
-                  </li>
+              </li>
 
-                <li class="sectionAside-menu__premium">
+              <li class="sectionAside-menu__premium">
                   <i class="fa-brands fa-spotify "></i> 
                         Premium 
-                    <span>
-                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                  </span> 
-                </li>
-                </ul>
-
-                <ul class="sectionAside-menu__playlist">
-                  <li class="sectionAside-menu__playlistCreate">
-                    <i class="fa-regular fa-square-plus"> </i>
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>   
+              </li>
+          </ul>
+          <ul class="sectionAside-menu__playlist">
+              <li class="sectionAside-menu__playlistCreate">
+                  <i class="fa-regular fa-square-plus"> </i>
                      Créer une playlist
-                  </li>
+              </li>
 
-                  <li class="sectionAside-menu__playlistTitle">
-                    <i class="fa-solid fa-heart"></i> 
+              <li class="sectionAside-menu__playlistTitle">
+                  <i class="fa-solid fa-heart"></i> 
                     Titre likés 
-                  </li>
-              </ul>       
-               <p class="sectionAside-menu__playlistName"> 
+              </li>
+          </ul>       
+          <p class="sectionAside-menu__playlistName"> 
                  Make them remenber your name
-              </p>                
-            </header>
+          </p>                
+        </header>
 
+        <section>  
+        <!-- side of the presentation of the playlist / top-->
+          <nav>
+           <!-- the top / header in responsive -->
+            <div class="main">  
+              <!-- Left -->
+              <p class="main-chevronLeft">
+                <i class="fa-solid fa-chevron-left"></i>
+              </p>
+              <p class="main-chevronRight">
+                <i class="fa-sharp fa-solid fa-chevron-right"></i>
+              </p>
 
-            <section>  <!-- side of the presentation of the playlist / top-->
-              <nav>
-                <!-- the top / header in responsive -->
-                <div class="main">  
-                  <!-- Left -->
-                  <p class="main-chevronLeft">
-                    <i class="fa-solid fa-chevron-left"></i>
-                  </p>
-
-                  <p class="main-chevronRight">
-                    <i class="fa-sharp fa-solid fa-chevron-right"></i>
-                  </p>
-                  <!-- Right-->
-                
-                    <p class="main-subscription">  
-                      S'abonner
-                    </p>
-
-                    <!-- Right
-                    <i class="fa-solid fa-user"> </i> -->
-                    <select class="main-user"> 
-                        <optgroup> 
-                          <option> <i style= "font-size:50px" class="Fas Fa-User-Alt">&#xf406;</i> user </option>
-                          <option> Compte </option> 
-                          
-              
-                        <option> Profil </option>
-                        <option> Passer à Premium 
-                        
-                        </option>
-                        <option> Section d'écoute privée</option>
-                        <option> Préférences</option>
-                      </optgroup>
-                      <optgroup>
-                        <option>Déconnection</option>                    
-                    </optgroup>
-                  </select>
-
-                </div>                   
-              </nav>        
+               <!-- Right-->
+              <p class="main-subscription">  
+                  S'abonner
+              </p>
+              <select class="main-user"> 
+                <optgroup> 
+                  <option> <i style= "font-size:50px" class="Fas Fa-User-Alt">&#xf406;</i> user </option>
+                  <option> Compte </option> 
+                  <option> Profil </option>
+                  <option> Passer à Premium   
+                  </option>
+                  <option> Section d'écoute privée</option>
+                  <option> Préférences</option>
+                  </optgroup>
+                  <optgroup>                  
+                  </optgroup>
+              </select>
+            </div>                   
+          </nav>        
                            
-              <article> <!-- side of the presentation of the playlist / top-->
-              <div class="main-playlist">
-            
-                <p class="main-playlist__picture">
-                  <img class="picture" src="../pictures/fire.png" alt="picturePlayliste-fire"/>
-                </p>
-
-                <div class="main-playlist__detail">
-                  
-                  <p class="main-playlist__detailPublic">PLAYLIST PUBLIQUE</p>
-
-                 <span class="main-playlist__detailTitle">Make them remember your name</span> 
-
-                  <p class="description"> When it is time to turn lemons into a lemonade </p>
-
-                  <p class="main-playlist__detailAccount">user  • 1 like • 18 titres, 1 h 10 min </p>
-
-                </div>
-
+          <article> <!-- side of the presentation of the playlist / top-->
+            <div class="main-playlist">
+              <p class="main-playlist__picture">
+                <img class="picture" src="../pictures/fire.png" alt="picturePlayliste-fire"/>
+              </p>
+              <div class="main-playlist__detail">                 
+                <p class="main-playlist__detailPublic">PLAYLIST PUBLIQUE</p>
+                <span class="main-playlist__detailTitle">Make them remember your name</span> 
+                <p class="main-playlist__detailSubTitle"> When it is time to turn lemons into a lemonade </p>
+                <p class="main-playlist__detailAccount">user  • 1 like • 18 titres, 1 h 10 min </p>
               </div>
-              </article>
+            </div>
+          </article>
          
-          
-            
-          
-              <article>
-                <div class="main-playlist__songs">
-                <!-- the playlist -->
-                    <!-- left -->
-                    <div class="main-playlist__songsIcon"> 
-                      <i class="fa-solid fa-circle-play fa-4x"></i>
-                    </div>
+          <article>
+          <!-- Left -->
+           <div class="main-playlist__songs">
+              <div class="main-playlist__songsIcon"> 
+                <i class="fa-solid fa-circle-play fa-4x"></i>
+              </div>
 
-                    <div class="main-playlist__songsIcon2">
-                      <i class="fa-sharp fa-solid fa-circle-down fa-2x"></i>
-                      <i class="fa-solid fa-user-plus fa-2x"></i>            
-                      <i class="fa-solid fa-ellipsis fa-2"></i>
-                    </div>
-              
+              <div class="main-playlist__songsIcon2">
+                <i class="fa-sharp fa-solid fa-circle-down fa-2x"></i>
+                <i class="fa-solid fa-user-plus fa-2x"></i>            
+                <i class="fa-solid fa-ellipsis fa-2"></i>
+              </div>
 
-
-                <!-- right -->
-                <div class="search-container">
-                  <form action="/search" method="get">
-                            <input class="search" id="searchleft" type="search" name="q" placeholder="Rechercher">
-                            <label class="button searchbutton" for="searchleft">
-                              <span class="mglass">&#9906;</span>
-                            </label>
-                          
-                          </form>
-                        </div>
+              <!-- right -->
+            <div class="search-container">
+              <form action="/search" method="get">
+                <input class="search" id="searchleft" type="search" name="q" placeholder="Rechercher">
+                  <label class="button searchbutton" for="searchleft">
+                    <span class="mglass">&#9906;</span>
+                  </label>
+              </form>
+            </div>
                                                   
 
-                          <select class="main-playlist__songsIconFilter"> 
-                      
-                                <option class="filter"> Trier par </option>
-                                <option class="filter"> Tri personnalisé </option>
-                                <option class="filter"> Tri personalisé </option>
-                                <option class="filter"> Titre </option>
-                                <option class="filter"> Artiste</option>
-                                <option class="filter"> Album </option>
-                                <option class="filter"> Date d'ajout </option>
-                                <option class="filter"> Durée </option>    
-                        </select>
-                      </div>
+              <select class="main-playlist__songsIconFilter">                     
+                <option class="filter"> Trier par </option>
+                <option class="filter"> Tri personnalisé </option>
+                <option class="filter"> Tri personalisé </option>
+                <option class="filter"> Titre </option>
+                <option class="filter"> Artiste</option>
+                <option class="filter"> Album </option>
+                <option class="filter"> Date d'ajout </option>
+                <option class="filter"> Durée </option>    
+              </select>
+         </div>
                  
-              
-
-            
-
-
-                    <div class="playlist">      <!-- PLAYLIST -->
-                  <!-- HEADER DE LA PLAYLIST / Titre / album/ ajoute ect... -->
-
-                      <ul class="playlist-header"> 
-
-                        <li class="playlist-header__number"> # </li>
-                        <li class="playlist-header__title"> TITRE </li>
-                        <li class="playlist-header__album"> ALBUM</li>
-                        <li class="playlist-header__addDate"> AJOUTE LE </li>
-                        <li class="playlist-header__time ">
-                          <i class="fa-regular fa-clock 5x"></i> 
-                        </li>
-                      </ul>
-                    </div>
+         <div class="playlist">      
+         <!-- Playlist -->
+         <!-- Header de la playlist... -->
+          <ul class="playlist-header"> 
+            <li class="playlist-header__number"> # </li>
+            <li class="playlist-header__title"> TITRE </li>
+            <li class="playlist-header__album"> ALBUM</li>
+            <li class="playlist-header__addDate"> AJOUTE LE </li>
+            <li class="playlist-header__time ">
+            <i class="fa-regular fa-clock 5x"></i> 
+            </li>
+          </ul>
+        </div>
 
 
-                    <!-- liste des music -->
-                    <div class="playlist-songs">
-                       <!-- Rosalia -->  
-                  <div class="songList">        
-                      <p class="test1"> 1 </p>
-                      <p class=" test2"> <img class="Rosalia" src="../pictures/rosalia.png" width="40" alt="rosalia"> </p>
-                        
-                      <div class="saokopapi">
-                          <h2> SAOKO </h2>
+        <!-- liste des music -->
+        <div class="playlist-songs">
 
-                          <div class="saokopapi2">
-                              <div class="test3"> E </div>
-                              <div class="motomami"> ROSALIA </div>
-                          </div>
-                      </div>
-          
-                      <h1> MOTOMAMI  </h1>
-                      <h1>  7 days ago  </h1>
-                      <h1> 2:18 </h1>
-                    </div>
-                  
-                  
-
-                    <!-- Rick Ross -->
-                  <div class="songList">        
-                    <p class="test1"> 2 </p>
-                    <p class=" test2"> <img class="RickRoss" src="../pictures/rick ross.jpg" width="40" alt="rosalia"> </p>
-                    
-                    <div class="saokopapi">
-                        <h2> Hustlin' </h2>
-
+        <!-- Rosalia -->  
+          <div class="songList">        
+            <p class="test1"> 1 </p>
+            <p class=" test2"> 
+              <img class="Rosalia" src="../pictures/rosalia.png" width="40" alt="rosalia"> 
+            </p>   
+              <div class="saokopapi">
+                  <h2> SAOKO </h2>
                       <div class="saokopapi2">
-                          <div class="test3"> E </div>
-                          <div class="motomami"> Rick Ross </div>
-                      </div>
-                    </div>
-      
-                    <h1> Port Of Miami  </h1>
-                    <h1>  7 days ago  </h1>
-                    <h1> 4:14 </h1>
-                  </div>
+                        <div class="test3"> 
+                          E  
+                        </div>
+                        <div class="motomami"> 
+                          ROSALIA 
+                        </div>
+                     </div>
+              </div>       
+               <h1> MOTOMAMI  </h1>
+               <h1>  7 days ago</h1>
+               <h1> 2:18 </h1>
+          </div>
+
+        <!-- Rick Ross -->
+        <div class="songList">        
+          <p class="test1"> 2 </p>
+          <p class=" test2"> 
+           <img class="RickRoss" src="../pictures/rick ross.jpg" width="40" alt="rosalia"> 
+          </p>
+            <div class="saokopapi">
+              <h2> Hustlin' </h2>
+                <div class="saokopapi2">
+                  <div class="test3"> E </div>
+                    <div class="motomami"> Rick Ross </div>
+                </div>
+            </div>
+              <h1> Port Of Miami  </h1>
+              <h1>  7 days ago  </h1>
+              <h1> 4:14 </h1>
+        </div>
 
 
                      <!-- Fergie -->
@@ -542,39 +507,33 @@
                     <h1> 3:40 </h1>
                   </div>
                 
-                </div>
+        </div>
   
-              </article>
-            </section>
+          </article>
+        </section>
 
+        <footer>
+          <div class="footer-audio">         
+            <i class="fa-solid fa-shuffle"></i> 
+            <i class="fa-solid fa-backward-fast"></i>
+            <i class="fa-sharp fa-solid fa-circle-play"></i>
+            <i class="fa-solid fa-forward-fast"></i>
+            <i class="fa-solid fa-rotate"></i>
+   
+          <div class="footer-audio__player"> </div>
+          <div class="footer-audio__playerLenght">
+            <p class="footer-audio__playerLenghtStart">0:00</p>
+            <p class="footer-audio__playerLenghtEnd">3:33</p>
+          </div>                    
+          </div>
 
-
-            <footer>
-              <div class="footer-audio">
-                    <!-- Icon here de l'audio  -->
-                    <i class="fa-solid fa-shuffle"></i> 
-                    <i class="fa-solid fa-backward-fast"></i>
-                    <i class="fa-sharp fa-solid fa-circle-play"></i>
-                    <i class="fa-solid fa-forward-fast"></i>
-                    <i class="fa-solid fa-rotate"></i>
-                   
-                    <div class="footer-audio__player"> </div>
-
-                    <div class="footer-audio__playerLenght">
-                      <p class="footer-audio__playerLenghtStart">0:00</p>
-                      <p class="footer-audio__playerLenghtEnd">3:33</p>
-                    </div>                    
-              </div>
-
-                <div class="footer-audio__volume">
+          <div class="footer-audio__volume">
                     <!-- Icon here du volume de l'audio  -->
                     <i class="fa-solid fa-microphone"></i> 
                     <i class="fa-solid fa-chart-simple"></i>
                     <i class="fa-solid fa-desktop"></i>
-                    <i class="fa-solid fa-volume-off"></i>
-              </div>
-              <div class="footer-audio__volumeLenght"> </div>
-            </footer>
-
-        </body>
+            <i class="fa-solid fa-volume-off"></i> </div>
+          <div class="footer-audio__volumeLenght"> </div>
+        </footer>
+    </body>
 </html>
