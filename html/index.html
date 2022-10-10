@@ -1,539 +1,459 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>MySpotify</title>
 
-        <!-- font -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
-        <!-- css -->
-        <link rel="stylesheet" href="../css/reset.css"/>
-        <link rel="stylesheet" href="../css/styles.css"/>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MySpotify</title>
 
-    
-        <!-- icons -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-        <link ref="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
-        <link rel="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.0/css/all.min.css">
-    </head>
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+  <!-- css -->
+  <link rel="stylesheet" href="../css/reset.css" />
+  <link rel="stylesheet" href="../css/styles.css" />
 
-      
-    
-     <body>
-        <!-- The left side of the page  -->    
-        <header >    
-          <ul class="sectionAside-menu">  
-              <li>
-                  <i class="fa-solid fa-ellipsis fa-2"></i>
-              </li>
-              <li class="sectionAside-menu__home">
-                  <i class="fa-sharp fa-solid fa-house"></i> 
-                  Acceuil 
-              </li>
-              <li class="sectionAside-menu__search">
-                  <i class="fa-solid fa-magnifying-glass"></i>
-                   Rechercher 
-              </li>
-              <li class="sectionAside-menu__library">
-                  <i class="fa-solid fa-chart-simple"></i>
-                   Bibliothèque 
-              </li>
 
-              <li class="sectionAside-menu__premium">
-                  <i class="fa-brands fa-spotify "></i> 
-                        Premium 
-                  <i class="fa-solid fa-arrow-up-right-from-square"></i>   
-              </li>
-          </ul>
-          <ul class="sectionAside-menu__playlist">
-              <li class="sectionAside-menu__playlistCreate">
-                  <i class="fa-regular fa-square-plus"> </i>
-                     Créer une playlist
-              </li>
+  <!-- icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <link ref="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+  <link rel="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.0/css/all.min.css">
+</head>
 
-              <li class="sectionAside-menu__playlistTitle">
-                  <i class="fa-solid fa-heart"></i> 
-                    Titre likés 
-              </li>
-          </ul>       
-          <p class="sectionAside-menu__playlistName"> 
-                 Make them remenber your name
-          </p>                
-        </header>
 
-        <section>  
-        <!-- side of the presentation of the playlist / top-->
-          <nav>
-           <!-- the top / header in responsive -->
-            <div class="main">  
-              <!-- Left -->
-              <p class="main-chevronLeft">
-                <i class="fa-solid fa-chevron-left"></i>
-              </p>
-              <p class="main-chevronRight">
-                <i class="fa-sharp fa-solid fa-chevron-right"></i>
-              </p>
 
-               <!-- Right-->
-              <p class="main-subscription">  
-                  S'abonner
-              </p>
-              <select class="main-user"> 
-                <optgroup> 
-                  <option> <i style= "font-size:50px" class="Fas Fa-User-Alt">&#xf406;</i> user </option>
-                  <option> Compte </option> 
-                  <option> Profil </option>
-                  <option> Passer à Premium   
-                  </option>
-                  <option> Section d'écoute privée</option>
-                  <option> Préférences</option>
-                  </optgroup>
-                  <optgroup>                  
-                  </optgroup>
-              </select>
-            </div>                   
-          </nav>        
-                           
-          <article> <!-- side of the presentation of the playlist / top-->
-            <div class="main-playlist">
-              <p class="main-playlist__picture">
-                <img class="picture" src="../pictures/fire.png" alt="picturePlayliste-fire"/>
-              </p>
-              <div class="main-playlist__detail">                 
-                <p class="main-playlist__detailPublic">PLAYLIST PUBLIQUE</p>
-                <span class="main-playlist__detailTitle">Make them remember your name</span> 
-                <p class="main-playlist__detailSubTitle"> When it is time to turn lemons into a lemonade </p>
-                <p class="main-playlist__detailAccount">user  • 1 like • 18 titres, 1 h 10 min </p>
-              </div>
-            </div>
-          </article>
-         
-          <article>
-          <!-- Left -->
-           <div class="main-playlist__songs">
-              <div class="main-playlist__songsIcon"> 
-                <i class="fa-solid fa-circle-play fa-4x"></i>
-              </div>
+<body>
+  <!-- The left side of the page  -->
+  <header>
+    <ul class="sectionAside-menu">
+      <li>
+        <i class="fa-solid fa-ellipsis fa-2"></i>
+      </li>
+      <li class="sectionAside-menu__home">
+        <i class="fa-sharp fa-solid fa-house"></i>
+        Acceuil
+      </li>
+      <li class="sectionAside-menu__search">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        Rechercher
+      </li>
+      <li class="sectionAside-menu__library">
+        <i class="fa-solid fa-chart-simple"></i>
+        Bibliothèque
+      </li>
 
-              <div class="main-playlist__songsIcon2">
-                <i class="fa-sharp fa-solid fa-circle-down fa-2x"></i>
-                <i class="fa-solid fa-user-plus fa-2x"></i>            
-                <i class="fa-solid fa-ellipsis fa-2"></i>
-              </div>
+      <li class="sectionAside-menu__premium">
+        <i class="fa-brands fa-spotify "></i>
+        Premium
+        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+      </li>
+    </ul>
+    <ul class="sectionAside-menu__playlist">
+      <li class="sectionAside-menu__playlistCreate">
+        <i class="fa-regular fa-square-plus"> </i>
+        Créer une playlist
+      </li>
+      <li class="sectionAside-menu__playlistTitle">
+        <i class="fa-solid fa-heart"></i>
+        Titre likés
+      </li>
+    </ul>
+    <p class="sectionAside-menu__playlistName">
+      Make them remenber your name
+    </p>
+  </header>
 
-              <!-- right -->
-            <div class="search-container">
-              <form action="/search" method="get">
-                <input class="search" id="searchleft" type="search" name="q" placeholder="Rechercher">
-                  <label class="button searchbutton" for="searchleft">
-                    <span class="mglass">&#9906;</span>
-                  </label>
-              </form>
-            </div>
-                                                  
+  <section>
+    <!-- side of the presentation of the playlist / top-->
+    <nav>
+      <!-- the top / header in responsive -->
+      <div class="main">
+        <!-- Left -->
+        <p class="main-chevronLeft">
+          <i class="fa-solid fa-chevron-left"></i>
+        </p>
+        <p class="main-chevronRight">
+          <i class="fa-sharp fa-solid fa-chevron-right"></i>
+        </p>
 
-              <select class="main-playlist__songsIconFilter">                     
-                <option class="filter"> Trier par </option>
-                <option class="filter"> Tri personnalisé </option>
-                <option class="filter"> Tri personalisé </option>
-                <option class="filter"> Titre </option>
-                <option class="filter"> Artiste</option>
-                <option class="filter"> Album </option>
-                <option class="filter"> Date d'ajout </option>
-                <option class="filter"> Durée </option>    
-              </select>
-         </div>
-                 
-         <div class="playlist">      
-         <!-- Playlist -->
-         <!-- Header de la playlist... -->
-          <ul class="playlist-header"> 
-            <li class="playlist-header__number"> # </li>
-            <li class="playlist-header__title"> TITRE </li>
-            <li class="playlist-header__album"> ALBUM</li>
-            <li class="playlist-header__addDate"> AJOUTE LE </li>
-            <li class="playlist-header__time ">
-            <i class="fa-regular fa-clock 5x"></i> 
-            </li>
-          </ul>
+        <!-- Right-->
+        <p class="main-subscription">
+          S'abonner
+        </p>
+        <select class="main-user">
+          <optgroup>
+            <option> <i style="font-size:50px" class="Fas Fa-User-Alt">&#xf406;</i> user </option>
+            <option> Compte </option>
+            <option> Profil </option>
+            <option> Passer à Premium
+            </option>
+            <option> Section d'écoute privée</option>
+            <option> Préférences</option>
+          </optgroup>
+          <optgroup>
+          </optgroup>
+        </select>
+      </div>
+    </nav>
+
+    <article>
+      <!-- side of the presentation of the playlist / top-->
+      <div class="main-playlist">
+        <p class="main-playlist__picture">
+          <img class="picture" src="../pictures/fire.png" alt="picturePlayliste-fire" />
+        </p>
+        <div class="main-playlist__detail">
+          <p class="main-playlist__detailPublic">PLAYLIST PUBLIQUE</p>
+          <span class="main-playlist__detailTitle">Make them remember your name</span>
+          <p class="main-playlist__detailSubTitle"> When it is time to turn lemons into a lemonade </p>
+          <p class="main-playlist__detailAccount">user • 1 like • 18 titres, 1 h 10 min </p>
+        </div>
+      </div>
+    </article>
+
+    <article>
+      <!-- Left -->
+      <div class="main-playlist__songs">
+        <div class="main-playlist__songsIcon">
+          <i class="fa-solid fa-circle-play fa-4x"></i>
+        </div>
+        <div class="main-playlist__songsIcon2">
+          <i class="fa-sharp fa-solid fa-circle-down fa-2x"></i>
+          <i class="fa-solid fa-user-plus fa-2x"></i>
+          <i class="fa-solid fa-ellipsis fa-2"></i>
         </div>
 
+        <!-- right -->
+        <div class="search-container">
+          <form action="/search" method="get">
+            <input class="search" id="searchleft" type="search" name="q" placeholder="Rechercher">
+            <label class="button searchbutton" for="searchleft">
+              <span class="mglass">&#9906;</span>
+            </label>
+          </form>
+        </div>
+        <select class="main-playlist__songsIconFilter">
+          <option class="filter"> Trier par </option>
+          <option class="filter"> Tri personnalisé </option>
+          <option class="filter"> Tri personalisé </option>
+          <option class="filter"> Titre </option>
+          <option class="filter"> Artiste</option>
+          <option class="filter"> Album </option>
+          <option class="filter"> Date d'ajout </option>
+          <option class="filter"> Durée </option>
+        </select>
+      </div>
 
-        <!-- liste des music -->
-        <div class="playlist-songs">
+      <div class="playlist">
+        <!-- Playlist -->
+        <!-- Header de la playlist... -->
+        <ul class="playlist-header">
+          <li class="playlist-header__number"> # </li>
+          <li class="playlist-header__title"> TITRE </li>
+          <li class="playlist-header__album"> ALBUM</li>
+          <li class="playlist-header__addDate"> AJOUTE LE </li>
+          <li class="playlist-header__time ">
+            <i class="fa-regular fa-clock 5x"></i>
+          </li>
+        </ul>
+      </div>
 
-        <!-- Rosalia -->  
-          <div class="songList">        
-            <p class="test1"> 1 </p>
-            <p class=" test2"> 
-              <img class="Rosalia" src="../pictures/rosalia.png" width="40" alt="rosalia"> 
-            </p>   
-              <div class="saokopapi">
-                  <h2> SAOKO </h2>
-                      <div class="saokopapi2">
-                        <div class="test3"> 
-                          E  
-                        </div>
-                        <div class="motomami"> 
-                          ROSALIA 
-                        </div>
-                     </div>
-              </div>       
-               <h1> MOTOMAMI  </h1>
-               <h1>  7 days ago</h1>
-               <h1> 2:18 </h1>
-          </div>
-
-        <!-- Rick Ross -->
-        <div class="songList">        
-          <p class="test1"> 2 </p>
-          <p class=" test2"> 
-           <img class="RickRoss" src="../pictures/rick ross.jpg" width="40" alt="rosalia"> 
+      <!-- liste des music -->
+      <div class="playlist-songs">
+        <!-- Rosalia -->
+        <div class="playlist-songsList">
+          <p class="playlist-tracknumber"> 1 </p>
+          <p class=" playlist-picture">
+            <img class="Rosalia" src="../pictures/rosalia.png" width="40" alt="rosalia">
           </p>
-            <div class="saokopapi">
-              <h2> Hustlin' </h2>
-                <div class="saokopapi2">
-                  <div class="test3"> E </div>
-                    <div class="motomami"> Rick Ross </div>
-                </div>
+          <div class="playist-title">
+            <h2> SAOKO </h2>
+            <div class="playist-explicit">
+              <div class="test3">
+                E
+              </div>
+              <div class="playslist-artistname">
+                ROSALIA
+              </div>
             </div>
-              <h1> Port Of Miami  </h1>
-              <h1>  7 days ago  </h1>
-              <h1> 4:14 </h1>
-        </div>
-
-
-                     <!-- Fergie -->
-                  <div class="songList">        
-                        <p class="test1"> 3 </p>
-                        <p class=" test2"> <img class="Fergie" src="../pictures/fergie.jpg" width="40" alt="rosalia"> </p>
-                        
-                        <div class="saokopapi">
-                            <h2> Glamorous </h2>
-
-                          <div class="saokopapi2">
-                              <div class="test3"> E </div>
-                              <div class="motomami"> Fergie, Ludacris </div>
-                          </div>
-                        </div>
-          
-                        <h1> The Dutchess  </h1>
-                        <h1>  7 days ago  </h1>
-                        <h1> 4:07 </h1>
-                  </div>
-
-
-                     <!-- Doechii -->
-                  <div class="songList">        
-                    <p class="test1"> 4 </p>
-                    <p class=" test2"> <img class="Doechii" src="../pictures/doechi.jpg" width="40" alt="rosalia"> </p>
-                    
-                    <div class="saokopapi">
-                        <h2> Persuasive </h2>
-
-                  <div class="saokopapi2">
-                      <div class="test3"> E </div>
-                      <div class="motomami"> Doechii </div>
-                  </div>
-                </div>
-  
-                    <h1> Persuasive  </h1>
-                    <h1>  7 days ago  </h1>
-                    <h1> 3:37 </h1>
-                      </div>
-
-
-                     <!-- Megan Thee Stallion -->
-                  <div class="songList">        
-                    <p class="test1"> 5 </p>
-                    <p class=" test2"> <img class="MeganTheeStallion" src="../pictures/MeganTheSTallion.jpg" width="40" alt="rosalia"> </p>
-                    
-                    <div class="saokopapi">
-                        <h2> Realer </h2>
-
-                      <div class="saokopapi2">
-                          <div class="test3"> E </div>
-                          <div class="motomami"> Megan Thee Stallion  </div>
-                      </div>
-                    </div>
-
-                    <h1> Fever  </h1>
-                    <h1>  7 days ago  </h1>
-                    <h1> 2:30 </h1>
-                      </div>
-
-
-                     <!-- IAMDDB-->
-                  <div class="songList">        
-                        <p class="test1"> 6 </p>
-                        <p class=" test2"> <img class="IAMDDB" src="../pictures/IAMDDB.jpg" width="40" alt="rosalia"> </p>
-                        
-                        <div class="saokopapi">
-                            <h2> Shade </h2>
-
-                          <div class="saokopapi2">
-                              <div class="test3"> E </div>
-                              <div class="motomami"> IAMDDB </div>
-                          </div>
-                        </div>
-
-                        <h1> Hoodrich Vol. 3  </h1>
-                        <h1>  7 days ago  </h1>
-                        <h1> 2:55 </h1>
-                      </div>
-
-
-                     <!-- Solange Things I imagined-->
-                  <div class="songList">        
-                    <p class="test1"> 7 </p>
-                    <p class=" test2"> <img class="Solange" src="../pictures/Solange.jpg" width="40" alt="rosalia"> </p>
-                    
-                    <div class="saokopapi">
-                        <h2> Things I Imagined </h2>
-
-                      <div class="saokopapi2">
-                          <div class="test3"> E </div>
-                          <div class="motomami"> Solange </div>
-                      </div>
-                    </div>
-
-                    <h1> When I Get Home  </h1>
-                    <h1>  7 days ago  </h1>
-                    <h1> 1:59 </h1>
-                  </div>
-
-
-                   <!-- Solange Nothing without intention -->
-                   <div class="songList">        
-                    <p class="test1"> 8 </p>
-                    <p class=" test2"> <img class="Solange" src="../pictures/Solange.jpg" width="40" alt="rosalia"> </p>
-                    
-                    <div class="saokopapi">
-                        <h2> Nothing Without Intention </h2>
-
-                      <div class="saokopapi2">
-                          <div class="test3"> E </div>
-                          <div class="motomami"> Solange </div>
-                      </div>
-                    </div>
-
-                    <h1> When I Get Home  </h1>
-                    <h1>  7 days ago  </h1>
-                    <h1> 0:24 </h1>
-                  </div>
-
-
-
-                   <!-- Solange Almeda-->
-                   <div class="songList">        
-                    <p class="test1"> 9 </p>
-                    <p class=" test2"> <img class="Solange" src="../pictures/Solange.jpg" width="40" alt="rosalia"> </p>
-                    
-                    <div class="saokopapi">
-                        <h2> Almeda </h2>
-
-                      <div class="saokopapi2">
-                          <div class="test3"> E </div>
-                          <div class="motomami"> Solange </div>
-                      </div>
-                    </div>
-
-                    <h1> When I Get Home  </h1>
-                    <h1>  7 days ago  </h1>
-                    <h1> 3:56 </h1>
-                  </div>
-
-                   <!-- Beyonce Cozy-->
-                  <div class="songList">        
-                    <p class="test1"> 10 </p>
-                    <p class=" test2"> <img class="Beyonce" src="../pictures/Beyonce.jpg" width="40" alt="rosalia"> </p>
-                    
-                    <div class="saokopapi">
-                        <h2> COZY </h2>
-
-                      <div class="saokopapi2">
-                          <div class="test3"> E </div>
-                          <div class="motomami"> Beyoncé </div>
-                      </div>
-                    </div>
-
-                    <h1> RENAISSANCE  </h1>
-                    <h1>  7 days ago  </h1>
-                    <h1> 3:23 </h1>
-                  </div>
-
-
-
-                   <!-- Beyon / I'm that girl -->
-                   <div class="songList">        
-                    <p class="test1"> 11 </p>
-                    <p class=" test2"> <img class="Beyonce" src="../pictures/Beyonce.jpg" width="40" alt="rosalia"> </p>
-                    
-                    <div class="saokopapi">
-                        <h2> I'M THAT GIRL </h2>
-
-                      <div class="saokopapi2">
-                          <div class="test3"> E </div>
-                          <div class="motomami"> Beyoncé </div>
-                      </div>
-                    </div>
-
-                    <h1> RENAISSANCE  </h1>
-                    <h1>  7 days ago  </h1>
-                    <h1> 3:28 </h1>
-                  </div>
-
-
-                   <!-- Beyonce / Move -->
-                   <div class="songList">        
-                    <p class="test1"> 12 </p>
-                    <p class=" test2"> <img class="Beyonce" src="../pictures/Beyonce.jpg" width="40" alt="rosalia"> </p>
-                    
-                    <div class="saokopapi">
-                        <h2> MOVE </h2>
-
-                      <div class="saokopapi2">
-                          <div class="test3"> E </div>
-                          <div class="motomami"> Beyoncé </div>
-                      </div>
-                    </div>
-
-                    <h1> RENAISSANCE  </h1>
-                    <h1>  7 days ago  </h1>
-                    <h1> 3:23 </h1>
-                  </div>
-
-                   <!-- Leikeli47 -->
-                  <div class="songList">        
-                    <p class="test1"> 13 </p>
-                    <p class=" test2"> <img class="Lekeli47" src="../pictures/Leikeli47.jpg" width="40" alt="rosalia"> </p>
-                    
-                    <div class="saokopapi">
-                        <h2> Money </h2>
-
-                      <div class="saokopapi2">
-                          <div class="test3"> E </div>
-                          <div class="motomami"> Leikeli47 </div>
-                      </div>
-                    </div>
-
-                    <h1> Wash & Set  </h1>
-                    <h1>  7 days ago  </h1>
-                    <h1> 2:55 </h1>
-                  </div>
-
-
-
-                   <!-- Chole and halle -->
-                  <div class="songList">        
-                    <p class="test1"> 14 </p>
-                    <p class=" test2"> <img class="ChloeHalle" src="../pictures/ChloeHalle.jpg" width="40" alt="rosalia"> </p>
-                    
-                    <div class="saokopapi">
-                        <h2> Do It </h2>
-
-                      <div class="saokopapi2">
-                         
-                          <div class="motomami"> Chloe x Halle </div>
-                      </div>
-                    </div>
-
-                    <h1> Ungodly Hour  </h1>
-                    <h1>  7 days ago  </h1>
-                    <h1> 2:57 </h1>
-                  </div>
-
-
-
-                   <!-- Jorja SMith -->
-                  <div class="songList">        
-                    <p class="test1"> 15 </p>
-                    <p class=" test2"> <img class="JorjaSmith" src="../pictures/JorjaSmith.jpg" width="40" alt="rosalia"> </p>
-                    
-                    <div class="saokopapi">
-                        <h2> Bussdown </h2>
-
-                      <div class="saokopapi2">
-                          <div class="test3"> E </div>
-                          <div class="motomami"> Jorja Smith, Shaybo </div>
-                      </div>
-                    </div>
-
-                    <h1> Be Right Back  </h1>
-                    <h1>  7 days ago  </h1>
-                    <h1> 3:22 </h1>
-                  </div>
-
-
-                   <!-- Eliza -->
-                  <div class="songList">        
-                    <p class="test1"> 16 </p>
-                    <p class=" test2"> <img class="Eliza" src="../pictures/Eliza.jpg" width="40" alt="rosalia"> </p>
-                    
-                    <div class="saokopapi">
-                        <h2> Alone & Unafraid </h2>
-
-                      <div class="saokopapi2">
-                          <div class="test3"> E </div>
-                          <div class="motomami"> ELIZA </div>
-                      </div>
-                    </div>
-
-                    <h1> A Real Romantic  </h1>
-                    <h1>  7 days ago  </h1>
-                    <h1> 4:30 </h1>
-                  </div>
-
-                   <!-- Sudan Archive -->
-                  <div class="songList">        
-                    <p class="test1"> 17 </p>
-                    <p class=" test2"> <img class="SudanArchives" src="../pictures/SundanArchives.jpg" width="40" alt="rosalia"> </p>
-                    
-                    <div class="saokopapi">
-                        <h2> Nont For Sale </h2>
-
-                      <div class="saokopapi2">
-                          <div class="test3"> E </div>
-                          <div class="motomami"> Sudan Archives </div>
-                      </div>
-                    </div>
-
-                    <h1> Nont For Sale  </h1>
-                    <h1>  7 days ago  </h1>
-                    <h1> 3:40 </h1>
-                  </div>
-                
-        </div>
-  
-          </article>
-        </section>
-
-        <footer>
-          <div class="footer-audio">         
-            <i class="fa-solid fa-shuffle"></i> 
-            <i class="fa-solid fa-backward-fast"></i>
-            <i class="fa-sharp fa-solid fa-circle-play"></i>
-            <i class="fa-solid fa-forward-fast"></i>
-            <i class="fa-solid fa-rotate"></i>
-   
-          <div class="footer-audio__player"> </div>
-          <div class="footer-audio__playerLenght">
-            <p class="footer-audio__playerLenghtStart">0:00</p>
-            <p class="footer-audio__playerLenghtEnd">3:33</p>
-          </div>                    
           </div>
+          <h1> MOTOMAMI </h1>
+          <h1> 7 days ago</h1>
+          <h1> 2:18 </h1>
+        </div>
+        <!-- Rick Ross -->
+        <div class="playlist-songsList">
+          <p class="playlist-tracknumber"> 2 </p>
+          <p class=" playlist-picture">
+            <img class="RickRoss" src="../pictures/rick ross.jpg" width="40" alt="rosalia">
+          </p>
+          <div class="playist-title">
+            <h2> Hustlin' </h2>
+            <div class="playist-explicit">
+              <div class="test3"> E </div>
+              <div class="playslist-artistname"> Rick Ross </div>
+            </div>
+          </div>
+          <h1> Port Of Miami </h1>
+          <h1> 7 days ago </h1>
+          <h1> 4:14 </h1>
+        </div>
+        <!-- Fergie -->
+        <div class="playlist-songsList">
+          <p class="playlist-tracknumber"> 3 </p>
+          <p class=" playlist-picture"> <img class="Fergie" src="../pictures/fergie.jpg" width="40" alt="rosalia"> </p>
+          <div class="playist-title">
+            <h2> Glamorous </h2>
+            <div class="playist-explicit">
+              <div class="test3"> E </div>
+              <div class="playslist-artistname"> Fergie, Ludacris </div>
+            </div>
+          </div>
+          <h1> The Dutchess </h1>
+          <h1> 7 days ago </h1>
+          <h1> 4:07 </h1>
+        </div>
+        <!-- Doechii -->
+        <div class="playlist-songsList">
+          <p class="playlist-tracknumber"> 4 </p>
+          <p class=" playlist-picture">
+            <img class="Doechii" src="../pictures/doechi.jpg" width="40" alt="rosalia">
+          </p>
+          <div class="playist-title">
+            <h2> Persuasive </h2>
+            <div class="playist-explicit">
+              <div class="test3"> E </div>
+              <div class="playslist-artistname"> Doechii </div>
+            </div>
+          </div>
+          <h1> Persuasive </h1>
+          <h1> 7 days ago </h1>
+          <h1> 3:37 </h1>
+        </div>
+        <!-- Megan Thee Stallion -->
+        <div class="playlist-songsList">
+          <p class="playlist-tracknumber"> 5 </p>
+          <p class=" playlist-picture"> <img class="MeganTheeStallion" src="../pictures/MeganTheSTallion.jpg" width="40"
+              alt="rosalia"> </p>
+          <div class="playist-title">
+            <h2> Realer </h2>
+            <div class="playist-explicit">
+              <div class="test3"> E </div>
+              <div class="playslist-artistname"> Megan Thee Stallion </div>
+            </div>
+          </div>
+          <h1> Fever </h1>
+          <h1> 7 days ago </h1>
+          <h1> 2:30 </h1>
+        </div>
+        <!-- IAMDDB-->
+        <div class="playlist-songsList">
+          <p class="playlist-tracknumber"> 6 </p>
+          <p class=" playlist-picture"> <img class="IAMDDB" src="../pictures/IAMDDB.jpg" width="40" alt="rosalia"> </p>
+          <div class="playist-title">
+            <h2> Shade </h2>
+            <div class="playist-explicit">
+              <div class="test3"> E </div>
+              <div class="playslist-artistname"> IAMDDB </div>
+            </div>
+          </div>
+          <h1> Hoodrich Vol. 3 </h1>
+          <h1> 7 days ago </h1>
+          <h1> 2:55 </h1>
+        </div>
+        <!-- Solange Things I imagined-->
+        <div class="playlist-songsList">
+          <p class="playlist-tracknumber"> 7 </p>
+          <p class=" playlist-picture"> <img class="Solange" src="../pictures/Solange.jpg" width="40" alt="rosalia"> </p>
+          <div class="playist-title">
+            <h2> Things I Imagined </h2>
+            <div class="playist-explicit">
+              <div class="test3"> E </div>
+              <div class="playslist-artistname"> Solange </div>
+            </div>
+          </div>
+          <h1> When I Get Home </h1>
+          <h1> 7 days ago </h1>
+          <h1> 1:59 </h1>
+        </div>
+        <!-- Solange Nothing without intention -->
+        <div class="playlist-songsList">
+          <p class="playlist-tracknumber"> 8 </p>
+          <p class=" playlist-picture"> <img class="Solange" src="../pictures/Solange.jpg" width="40" alt="rosalia"> </p>
+          <div class="playist-title">
+            <h2> Nothing Without Intention </h2>
+            <div class="playist-explicit">
+              <div class="test3"> E </div>
+              <div class="playslist-artistname"> Solange </div>
+            </div>
+          </div>
+          <h1> When I Get Home </h1>
+          <h1> 7 days ago </h1>
+          <h1> 0:24 </h1>
+        </div>
+        <!-- Solange Almeda-->
+        <div class="playlist-songsList">
+          <p class="playlist-tracknumber"> 9 </p>
+          <p class=" playlist-picture"> <img class="Solange" src="../pictures/Solange.jpg" width="40" alt="rosalia"> </p>
+          <div class="playist-title">
+            <h2> Almeda </h2>
+            <div class="playist-explicit">
+              <div class="test3"> E </div>
+              <div class="playslist-artistname"> Solange </div>
+            </div>
+          </div>
+          <h1> When I Get Home </h1>
+          <h1> 7 days ago </h1>
+          <h1> 3:56 </h1>
+        </div>
+        <!-- Beyonce Cozy-->
+        <div class="playlist-songsList">
+          <p class="playlist-tracknumber"> 10 </p>
+          <p class=" playlist-picture"> <img class="Beyonce" src="../pictures/Beyonce.jpg" width="40" alt="rosalia"> </p>
+          <div class="playist-title">
+            <h2> COZY </h2>
+            <div class="playist-explicit">
+              <div class="test3"> E </div>
+              <div class="playslist-artistname"> Beyoncé </div>
+            </div>
+          </div>
+          <h1> RENAISSANCE </h1>
+          <h1> 7 days ago </h1>
+          <h1> 3:23 </h1>
+        </div>
+        <!-- Beyon / I'm that girl -->
+        <div class="playlist-songsList">
+          <p class="playlist-tracknumber"> 11 </p>
+          <p class=" playlist-picture"> <img class="Beyonce" src="../pictures/Beyonce.jpg" width="40" alt="rosalia"> </p>
+          <div class="playist-title">
+            <h2> I'M THAT GIRL </h2>
+            <div class="playist-explicit">
+              <div class="test3"> E </div>
+              <div class="playslist-artistname"> Beyoncé </div>
+            </div>
+          </div>
+          <h1> RENAISSANCE </h1>
+          <h1> 7 days ago </h1>
+          <h1> 3:28 </h1>
+        </div>
+        <!-- Beyonce / Move -->
+        <div class="playlist-songsList">
+          <p class="playlist-tracknumber"> 12 </p>
+          <p class=" playlist-picture"> <img class="Beyonce" src="../pictures/Beyonce.jpg" width="40" alt="rosalia"> </p>
+          <div class="playist-title">
+            <h2> MOVE </h2>
+            <div class="playist-explicit">
+              <div class="test3"> E </div>
+              <div class="playslist-artistname"> Beyoncé </div>
+            </div>
+          </div>
+          <h1> RENAISSANCE </h1>
+          <h1> 7 days ago </h1>
+          <h1> 3:23 </h1>
+        </div>
+        <!-- Leikeli47 -->
+        <div class="playlist-songsList">
+          <p class="playlist-tracknumber"> 13 </p>
+          <p class=" playlist-picture"> <img class="Lekeli47" src="../pictures/Leikeli47.jpg" width="40" alt="rosalia"> </p>
+          <div class="playist-title">
+            <h2> Money </h2>
+            <div class="playist-explicit">
+              <div class="test3"> E </div>
+              <div class="playslist-artistname"> Leikeli47 </div>
+            </div>
+          </div>
+          <h1> Wash & Set </h1>
+          <h1> 7 days ago </h1>
+          <h1> 2:55 </h1>
+        </div>
+        <!-- Chole and halle -->
+        <div class="playlist-songsList">
+          <p class="playlist-tracknumber"> 14 </p>
+          <p class=" playlist-picture"> <img class="ChloeHalle" src="../pictures/ChloeHalle.jpg" width="40" alt="rosalia"> </p>
+          <div class="playist-title">
+            <h2> Do It </h2>
+            <div class="playist-explicit">
+              <div class="playslist-artistname"> Chloe x Halle </div>
+            </div>
+          </div>
+          <h1> Ungodly Hour </h1>
+          <h1> 7 days ago </h1>
+          <h1> 2:57 </h1>
+        </div>
+        <!-- Jorja SMith -->
+        <div class="playlist-songsList">
+          <p class="playlist-tracknumber"> 15 </p>
+          <p class=" playlist-picture"> <img class="JorjaSmith" src="../pictures/JorjaSmith.jpg" width="40" alt="rosalia"> </p>
+          <div class="playist-title">
+            <h2> Bussdown </h2>
+            <div class="playist-explicit">
+              <div class="test3"> E </div>
+              <div class="playslist-artistname"> Jorja Smith, Shaybo </div>
+            </div>
+          </div>
+          <h1> Be Right Back </h1>
+          <h1> 7 days ago </h1>
+          <h1> 3:22 </h1>
+        </div>
+        <!-- Eliza -->
+        <div class="playlist-songsList">
+          <p class="playlist-tracknumber"> 16 </p>
+          <p class=" playlist-picture"> <img class="Eliza" src="../pictures/Eliza.jpg" width="40" alt="rosalia"> </p>
+          <div class="playist-title">
+            <h2> Alone & Unafraid </h2>
+            <div class="playist-explicit">
+              <div class="playslist-artistname"> ELIZA </div>
+            </div>
+          </div>
+          <h1> A Real Romantic </h1>
+          <h1> 7 days ago </h1>
+          <h1> 4:30 </h1>
+        </div>
+        <!-- Sudan Archive -->
+        <div class="playlist-songsList">
+          <p class="playlist-tracknumber"> 17 </p>
+          <p class=" playlist-picture"> <img class="SudanArchives" src="../pictures/SundanArchives.jpg" width="40" alt="rosalia">
+          </p>
+          <div class="playist-title">
+            <h2> Nont For Sale </h2>
+            <div class="playist-explicit">
+              <div class="playslist-artistName"> Sudan Archives </div>
+            </div>
+          </div>
+          <h1> Nont For Sale </h1>
+          <h1> 7 days ago </h1>
+          <h1> 3:40 </h1>
+        </div>
+      </div>
+    </article>
+  </section>
 
-          <div class="footer-audio__volume">
-                    <!-- Icon here du volume de l'audio  -->
-                    <i class="fa-solid fa-microphone"></i> 
-                    <i class="fa-solid fa-chart-simple"></i>
-                    <i class="fa-solid fa-desktop"></i>
-            <i class="fa-solid fa-volume-off"></i> </div>
-          <div class="footer-audio__volumeLenght"> </div>
-        </footer>
-    </body>
+  <footer>
+    <div class="footer-audio">
+      <i class="fa-solid fa-shuffle"></i>
+      <i class="fa-solid fa-backward-fast"></i>
+      <i class="fa-sharp fa-solid fa-circle-play"></i>
+      <i class="fa-solid fa-forward-fast"></i>
+      <i class="fa-solid fa-rotate"></i>
+
+      <div class="footer-audio__player"> </div>
+      <div class="footer-audio__playerLenght">
+        <p class="footer-audio__playerLenghtStart">0:00</p>
+        <p class="footer-audio__playerLenghtEnd">3:33</p>
+      </div>
+    </div>
+    <div class="footer-audio__volume">
+      <!-- Icon here du volume de l'audio  -->
+      <i class="fa-solid fa-microphone"></i>
+      <i class="fa-solid fa-chart-simple"></i>
+      <i class="fa-solid fa-desktop"></i>
+      <i class="fa-solid fa-volume-off"></i>
+    </div>
+    <div class="footer-audio__volumeLenght"> </div>
+
+  </footer>
+</body>
+
 </html>

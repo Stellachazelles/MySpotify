@@ -301,25 +301,25 @@
         margin-bottom: 8%;    
         }
 
-        .songList {
+        .playlist-songsList {
         display: grid; 
         grid-template-columns:  1fr  1fr  1fr 1fr  1fr 1fr 1fr; 
         grid-template-columns:  3%  4%  41.2% 22%  18.5% 1fr 1fr;
         overflow: auto;
         }
 
-        .test1 { 
+        .playlist-tracknumber { 
         margin-top: 30%;
         padding-left: 70%;
         font-weight: bold;    
          }
 
-        .saokopapi2{
+        .playist-explicit{
             display: flex;
             padding-top: 0.6%;
         }
 
-        .saokopapi {
+        .playist-title {
             padding-top: 2%;
         }
         h2 {
@@ -349,7 +349,7 @@
         
         }
 
-        .motomami {
+        .playslist-artistname {
             flex-wrap: wrap; 
             padding: 5px;
             font-size: 0.8em;
@@ -437,7 +437,7 @@
         cursor: pointer;
     }
 
-    .songList:hover {
+    .playlist-songsList:hover {
       
         background-color: #312C2B;
         opacity: 0.9;
@@ -562,12 +562,15 @@
             margin-left: 40%;
         }
 
-
+        .playlist-tracknumber {
+            padding-left: 40%;
+            margin-top: 50%;
+        }
         .playlist-songs {
             margin-bottom: 20%;
 
         }
-        .saokopapi {
+        .playist-title {
             padding-top: 2%;
             padding-left: 10%;
         }
@@ -610,7 +613,7 @@
             margin-top: 27%;
         }
 
-        .saokopapi {
+        .playist-title {
             padding-left: 20%;
         }
         .playlist-header__title {
@@ -623,13 +626,15 @@
         .playlist-header__addDate {
             padding-right: 7%;
         }
+        .playlist-tracknumber {   
+            padding-left: 70%;
+            margin-top: 90%;            
+        }
         p {
             padding-left: 20px;
         }
 
-        .footer-audio {
-         
-   
+        .footer-audio { 
             width: 40%;
             padding-left: 25%;
         }
