@@ -5,7 +5,7 @@
 
     body {
         width: 100%;
-        max-width: 100%;
+        /* max-width: 100%; */
         display: flex;     
         font-family: 'Montserrat', sans-serif;
         color: #b3b3b3;
