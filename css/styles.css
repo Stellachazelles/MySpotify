@@ -687,3 +687,7 @@ i:hover, p:hover, .sectionAside-menu__playlistName:hover, .sectionAside-menu__ho
  .fa-ellipsis {
     padding-top: 20px;
  }
+
+ .timeSong {
+    padding-top: 22%;
+}
